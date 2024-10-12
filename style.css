@@ -33,6 +33,25 @@ html {
     overflow: hidden;
 }
 
+.home-img{
+    width: 90%;
+    height: 70%;
+}
+
+.home-img img{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: 3px;
+}
+
+.home-card{
+    width: 90%;
+    height: 4vmin;
+    margin-top: 1vmin;
+    background-color: var(--grey);
+    border-radius: 3px;
+}
+
 /* Header section */
 
 header{
@@ -233,10 +252,22 @@ footer{
     font-size: 13px;
 }
 
+footer a:visited{
+    color: blue;
+}
+
 @media only screen and (max-width: 767px){
+
+    .home-img{
+        height: 75%;
+    }
 
     .header-img{
         margin: 1vmin 5vmin;
+    }
+
+    .home-card{
+        height: 13%;
     }
 
     main{
