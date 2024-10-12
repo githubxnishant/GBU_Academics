@@ -232,3 +232,53 @@ footer{
 .card-item p{
     font-size: 13px;
 }
+
+@media only screen and (max-width: 767px){
+
+    .header-img{
+        margin: 1vmin 5vmin;
+    }
+
+    main{
+        display: contents;
+    }
+    
+    aside{
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .app{
+        width: 90%;
+        height: 95%;
+    }
+
+    article{
+        height: 70vh;
+    }
+
+    .banner-img{
+        height: 30%;
+    }
+
+    .cards{
+        justify-content: center;
+    }
+
+    .card{
+        width: 80%;
+        height: 37vh;
+    }
+
+    .card-item h5{
+        font-size: 10px;
+    }
+
+    .card-item p{
+        font-size: medium;
+    }
+
+    footer{
+        background-color: var(--logo-bg);
+    }
+}
