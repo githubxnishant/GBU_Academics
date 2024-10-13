@@ -181,7 +181,7 @@ article{
 }
 
 .banner-img{
-    height: 50%;
+    height: auto;
     overflow: hidden;
 }
 
