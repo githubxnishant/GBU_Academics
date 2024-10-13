@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
     --logo-bg : #f8f9fa;
     --white: #fff;
     --grey: #d9d9d9;
     --black : #000;
+    --blue: #2563eb;
 }
 
 
@@ -16,7 +18,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: var(--logo-bg);
     overflow: hidden;
 }
@@ -200,7 +202,7 @@ footer{
 }
 
 .app span a{
-    color: blue;
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -237,6 +239,7 @@ footer{
     height: 100%;
     margin: 0 2vmin;
     text-align: center;
+    font-weight: normal;
 }
 
 .card-item{
@@ -253,7 +256,7 @@ footer{
 }
 
 footer a:visited{
-    color: blue;
+    color: var(--blue);
 }
 
 @media only screen and (max-width: 767px){
