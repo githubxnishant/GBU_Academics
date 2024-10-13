@@ -181,7 +181,7 @@ article{
 }
 
 .banner-img{
-    height: auto;
+    height: 50%;
     overflow: hidden;
 }
 
@@ -290,6 +290,10 @@ footer a:visited{
 
     .banner-img{
         height: 30%;
+    }
+
+    .banner-img img{
+        top: 0;
     }
 
     .cards{
