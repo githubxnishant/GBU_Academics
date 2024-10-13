@@ -109,6 +109,7 @@ aside h1{
 }
 
 .dropdown-toggle {
+    height: 10vmin;
     text-align: start;
     width: -webkit-fill-available;
     background-color: var(--grey);
@@ -285,6 +286,27 @@ footer a:visited{
 
     .home-card{
         height: 13%;
+    }
+
+    .dropdown{
+        margin: 0;
+    }
+    
+    .dropdown-container{
+        height: auto;
+        overflow: scroll;
+    }
+
+    .dropdown-div {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    gap: 10px;
+    overflow: scroll;
+    }
+
+    .dropdown-toggle{
+        width: 90vw;
     }
 
     main{
