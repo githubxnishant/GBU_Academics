@@ -207,7 +207,7 @@ footer{
 }
 
 .nav-detail{
-    margin: 2vmin auto;
+    margin: 2vmin auto 0;
 }
 
 .cards{
@@ -218,8 +218,8 @@ footer{
 }
 
 .card{
-    height: 28vh;
-    width: 28%;
+    height: 30vh;
+    width: 30%;
     border: 1px solid var(--grey);
     border-radius: 5px;
     margin: 2vmin;
@@ -228,7 +228,7 @@ footer{
 }
 
 .card-bg{
-    margin: 2vmin auto;
+    margin: 2vmin auto 1vmin;
     width: 90%;
     height: 25%;
     background-color: var(--grey);
@@ -253,6 +253,20 @@ footer{
 
 .card-item p{
     font-size: 13px;
+}
+
+.card-more{
+    position: relative;
+    bottom: 1vmin;
+    margin: auto;
+    width: 90%;
+    height: 12%;
+    background-color: var(--grey);
+    border-radius: 3px;
+}
+
+.card-more p{
+    margin: 0;
 }
 
 footer a:visited{
