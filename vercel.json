@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "name": "gbu_academics",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/static_build"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                { "key": "Cache-Control", "value": "max-age=31536000" },
+                { "key": "Access-Control-Allow-Origin", "value": "*" }
+            ]
+        }
+    ]
+}
