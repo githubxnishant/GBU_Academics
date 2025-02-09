@@ -1,0 +1,61 @@
+    {
+        "departments": [
+        {
+            "name": "School of Information and Communication Technology",
+            "branches": [
+            { "name": "CSE", "link": "/cse" },
+            { "name": "IT", "link": "/it" },
+            { "name": "ECE", "link": "/ece" }
+            ]
+        },
+        {
+            "name": "School of Management",
+            "branches": [
+            { "name": "MB", "link": "/mb" }
+            ]
+        },
+        {
+            "name": "School of Biotechnology",
+            "branches": [
+            { "name": "BT", "link": "/bt" }
+            ]
+        },
+        {
+            "name": "School of Vocational Studies and Applied Sciences",
+            "branches": [
+            { "name": "CS", "link": "/cs" },
+            { "name": "ES", "link": "/es" },
+            { "name": "FT", "link": "/ft" },
+            { "name": "MA", "link": "/ma" },
+            { "name": "PH", "link": "/ph" }
+            ]
+        },
+        {
+            "name": "School of Engineering",
+            "branches": [
+            { "name": "AR", "link": "/ar" },
+            { "name": "CE", "link": "/ce" },
+            { "name": "ECE", "link": "/eece" },
+            { "name": "EE", "link": "/ee" },
+            { "name": "ME", "link": "/me" }
+            ]
+        },
+        {
+            "name": "School of Humanities and Social Sciences",
+            "branches": [
+            { "name": "EN", "link": "/en" },
+            { "name": "EP", "link": "/ep" },
+            { "name": "ET", "link": "/et" },
+            { "name": "HC", "link": "/hc" },
+            { "name": "IL", "link": "/il" },
+            { "name": "MC", "link": "/mc" }
+            ]
+        },
+        {
+            "name": "School of Law Justice and Governance",
+            "branches": [
+            { "name": "LB", "link": "/lb" }
+            ]
+        }
+    ]
+}

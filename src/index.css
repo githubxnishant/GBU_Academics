@@ -1,0 +1,101 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.switch {
+  width: 100px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  transition: background-color 0.3s;
+  margin: 0 10px; /* Center the switch */
+}
+
+.switch.dark {
+  background-color: #000;
+}
+
+.switch.light {
+  background-color: #ccc;
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 7.5px;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle.dark {
+  transform: translateX(50px);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #000; /* Icon color */
+}
+
+.icon.moon {
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon.sun {
+  position: absolute;
+  right: 10
+}
+
+.dropdown-active{
+  background-color: #000;
+}
