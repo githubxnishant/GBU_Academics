@@ -28,6 +28,7 @@ import PH from './Pages/SOVSAS/PH';
 
 function App() {
 
+
   return(
     <>
       <BrowserRouter>
@@ -61,5 +62,7 @@ function App() {
     </>
   )
 }
+
+export const server = 'https://gbu-academics-backend.onrender.com/';
 
 export default App;

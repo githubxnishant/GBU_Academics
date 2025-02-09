@@ -4,6 +4,7 @@ import NavigationBar from '../../Components/SideNav/NavigationBar'
 import Footer from '../../Components/Footer/Footer'
 import SearchBar from '../../utils/SearchBar'
 import axios from 'axios';
+import { server } from '../../App'
 
 const Cse = () => {
 
@@ -25,7 +26,7 @@ const Cse = () => {
     useEffect(() => {
         const fetchAllSubjects = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/viewsubjects/cse")
+                const response = await axios.get(`${server}/viewsubjects/cse`)
                 setUnsortedData(response.data);
             } catch(error) {
                 console.log("Error Fetching Subject Data from DB!", error);
