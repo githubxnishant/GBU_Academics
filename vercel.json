@@ -1,16 +1,8 @@
 {
-    "version": 2,
-    "name": "gbu_academics",
-    "builds": [
-        {
-            "src": "index.html",
-            "use": "@vercel/static_build"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
-    ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
