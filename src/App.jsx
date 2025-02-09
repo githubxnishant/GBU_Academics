@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Homepage from './Components/MainBody/Homepage';
-import Dashboard from './Pages/Admin/Dashboard';
+// import Dashboard from './Pages/Admin/Dashboard';
 import {BrowserRouter, Routes, Route} from  'react-router-dom';
 import CSE from './Pages/SOICT/CSE';
 import IT from './Pages/SOICT/IT';
