@@ -34,7 +34,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Homepage />}></Route>
-          <Route path='/dashboard' element={<Dashboard />}></Route>
+          {/* <Route path='/dashboard' element={<Dashboard />}></Route> */}
           <Route path='/cse' element={<CSE />}></Route>
           <Route path='/it' element={<IT />}></Route>
           <Route path='/ece' element={<ECE />}></Route>
