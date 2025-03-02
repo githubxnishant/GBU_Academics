@@ -67,6 +67,5 @@ function App() {
 }
 
 export const server = 'https://gbu-academics-backend.onrender.com';
-// export const server = 'https://localhost:3000';
 
 export default App;
