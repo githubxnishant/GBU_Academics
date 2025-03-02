@@ -10,13 +10,7 @@
     "builds": [
         {
             "src": "package.json",
-            "use": "@vercel/static_build"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
+            "use": "@vercel/static-build"
         }
     ],
     "headers": [
