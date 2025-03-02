@@ -1,13 +1,10 @@
 {
-<<<<<<< HEAD
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
-=======
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ],
     "version": 2,
     "name": "gbu_academics",
     "builds": [
@@ -26,10 +23,15 @@
         {
             "source": "/(.*)",
             "headers": [
-                { "key": "Cache-Control", "value": "max-age=31536000" },
-                { "key": "Access-Control-Allow-Origin", "value": "*" }
+                {
+                    "key": "Cache-Control",
+                    "value": "max-age=31536000"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                }
             ]
         }
     ]
 }
->>>>>>> fac062f (backlog changes)
