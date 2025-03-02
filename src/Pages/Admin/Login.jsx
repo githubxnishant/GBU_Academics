@@ -16,7 +16,7 @@ const Login = () => {
     
         try {
             const res = await axios.post(
-                `${server}/login`,
+                `https://gbu-academics-backend.onrender.com/login`,
                 { username, password },
             );
             if(!res){return toast.error("Invalid Credentials!")}
