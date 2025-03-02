@@ -9,18 +9,18 @@ const BT = () => {
     return (
         <>
             <Header />
-            <div className='flex'>
+            <div className='md:flex'>
                 <NavigationBar />
-                <div className='w-[70%] flex justify-center mt-6'>
-                    <div className='w-[95%] h-[92%] overflow-auto'>
-                        <div className='h-[31vh] overflow-hidden rounded'>
-                            <img src="/Images/meditation_center.jpg" alt="Meditation Center Image" className='relative top-[-50%]' />
+                <div className='md:w-[70%] flex justify-center mt-6'>
+                    <div className='md:w-[95%] w-[90%] h-[92%] overflow-auto'>
+                        <div className='md:h-[31vh] h-40 overflow-hidden rounded'>
+                            <img src="/Images/meditation_center.jpg" alt="Meditation Center Image" className='relative md:top-[-60%] top-[-10%]' />
                         </div>
-                        <div className='w-auto h-[4vh] flex justify-between items-center my-3 font-normal text-base'>
+                        <div className='w-auto h-[4vh] flex justify-between items-center md:my-3 my-2 font-normal md:text-base text-xs'>
                             <h1><span className='text-[#2563eb] underline'>School of Biotechnology </span>&gt;<span className='text-[#2563eb] underline'> BT</span></h1>
                             <div><SearchBar /></div>
                         </div>
-                        <div className='flex justify-center items-center text-center px-24 h-[31vh] w-auto flex-col'>
+                        <div className='flex justify-center items-center text-center md:px-24 h-[25vh] w-auto flex-col'>
                             <Maintenance />
                         </div>
                     </div>

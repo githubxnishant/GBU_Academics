@@ -26,3 +26,4 @@ dist-ssr
 
 # Under Development Files
 server
+src/Pages/Admin

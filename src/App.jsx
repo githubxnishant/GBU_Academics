@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from 'react';
 import Homepage from './Components/MainBody/Homepage';
-// import Dashboard from './Pages/Admin/Dashboard';
+import Dashboard from './Pages/Admin/Dashboard';
 import {BrowserRouter, Routes, Route} from  'react-router-dom';
 import CSE from './Pages/SOICT/CSE';
 import IT from './Pages/SOICT/IT';
@@ -25,38 +24,42 @@ import ES from './Pages/SOVSAS/ES';
 import FT from './Pages/SOVSAS/FT';
 import MA from './Pages/SOVSAS/MA';
 import PH from './Pages/SOVSAS/PH';
+import Login from './Pages/Admin/Login';
+import ProtectedRoute from './Context/ProtectedRoute';
 
 function App() {
-
 
   return(
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Homepage />}></Route>
-          {/* <Route path='/dashboard' element={<Dashboard />}></Route> */}
-          <Route path='/cse' element={<CSE />}></Route>
-          <Route path='/it' element={<IT />}></Route>
-          <Route path='/ece' element={<ECE />}></Route>
-          <Route path='/bt' element={<BT />}></Route>
-          <Route path='/lb' element={<LB />}></Route>
-          <Route path='/mb' element={<MB />}></Route>
-          <Route path='/ar' element={<AR />}></Route>
-          <Route path='/ce' element={<CE />}></Route>
-          <Route path='/ee' element={<EE />}></Route>
-          <Route path='/me' element={<ME />}></Route>
-          <Route path='/eece' element={<EECE />}></Route>
-          <Route path='/en' element={<EN />}></Route>
-          <Route path='/ep' element={<EP />}></Route>
-          <Route path='/et' element={<ET />}></Route>
-          <Route path='/hc' element={<HC />}></Route>
-          <Route path='/il' element={<IL />}></Route>
-          <Route path='/mc' element={<MC />}></Route>
-          <Route path='/cs' element={<CS />}></Route>
-          <Route path='/es' element={<ES />}></Route>
-          <Route path='/ft' element={<FT />}></Route>
-          <Route path='/ma' element={<MA />}></Route>
-          <Route path='/ph' element={<PH />}></Route>
+          <Route path='/' element={<Homepage />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
+          <Route path='/login' element={<Login />} />
+          <Route path='/cse' element={<CSE />} />
+          <Route path='/it' element={<IT />} />
+          <Route path='/ece' element={<ECE />} />
+          <Route path='/bt' element={<BT />} />
+          <Route path='/lb' element={<LB />} />
+          <Route path='/mb' element={<MB />} />
+          <Route path='/ar' element={<AR />} />
+          <Route path='/ce' element={<CE />} />
+          <Route path='/ee' element={<EE />} />
+          <Route path='/me' element={<ME />} />
+          <Route path='/eece' element={<EECE />} />
+          <Route path='/en' element={<EN />} />
+          <Route path='/ep' element={<EP />} />
+          <Route path='/et' element={<ET />} />
+          <Route path='/hc' element={<HC />} />
+          <Route path='/il' element={<IL />} />
+          <Route path='/mc' element={<MC />} />
+          <Route path='/cs' element={<CS />} />
+          <Route path='/es' element={<ES />} />
+          <Route path='/ft' element={<FT />} />
+          <Route path='/ma' element={<MA />} />
+          <Route path='/ph' element={<PH />} />
         </Routes>
       </BrowserRouter>
     </>
@@ -64,5 +67,6 @@ function App() {
 }
 
 export const server = 'https://gbu-academics-backend.onrender.com';
+// export const server = 'https://localhost:3000';
 
 export default App;
