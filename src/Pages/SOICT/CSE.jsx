@@ -42,10 +42,10 @@ const Cse = () => {
                         </div>
                         <div className='w-auto h-[4vh] flex justify-between items-center md:my-3 mb-3 font-normal text-xs md:text-base'>
                             <h1><span className='text-[#2563eb] underline'>School of Information and Communication Technology </span>&gt;<span className='text-[#2563eb] underline'> CSE</span></h1>
-                            <div className='md:w-auto w-1/2 flex md:justify-end justify-between items-center'>
+                            {/* <div className='md:w-auto w-1/2 flex md:justify-end justify-between items-center'>
                                 <SearchBar />
                                 <button className='border ml-1 border-black px-2 md:ml-2 rounded'>Search</button>
-                            </div>
+                            </div> */}
                         </div>
                         <div className='flex md:justify-between justify-center flex-wrap gap-5 md:mb-0 -mb-1 h-[31vh] md:w-auto'>
                             {subData.map((subject) => (
