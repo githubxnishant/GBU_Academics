@@ -37,8 +37,8 @@ const Cse = () => {
                 <NavigationBar />
                 <div className='md:w-[70%] w-screen flex justify-center md:mt-6 mt-3'>
                     <div className='w-[90%] h-[92%] overflow-auto'>
-                        <div className='md:h-[31vh] h-[20vh] overflow-hidden rounded'>
-                            <img src="/Images/ict.jpg" alt="Meditation Center Image" className='relative md:top-[-50%] top-[-20%]' />
+                        <div className='md:h-[31vh] h-[18vh] overflow-hidden rounded'>
+                            <img src="/Images/ict.jpg" alt="Meditation Center Image" className='relative md:top-[-50%] top-[-10%]' />
                         </div>
                         <div className='w-auto h-[4vh] flex justify-between items-center md:my-3 mb-3 font-normal text-xs md:text-base'>
                             <h1><span className='text-[#2563eb] underline'>School of Information and Communication Technology </span>&gt;<span className='text-[#2563eb] underline'> CSE</span></h1>
