@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../../Components/Header/Header'
 import NavigationBar from '../../Components/SideNav/NavigationBar'
 import Footer from '../../Components/Footer/Footer'
@@ -10,6 +10,23 @@ const Cse = () => {
 
     const [unsortedData, setUnsortedData] = useState([]);
     const [subData, setSubData] = useState([]);
+    const [query, setQuery] = useState([]);
+
+    const searchQuery = async () => {
+        const sub = prompt("Search Subject Code");
+        try {
+            const response = await axios.get(`${server}/searchsubject/cse`, {
+                params: { sub }
+            });
+            if (response) {
+                setSubData([response.data.response]);
+                return;
+            }
+        } catch (error) {
+            console.log("Error searching the subject in the db!");
+            alert(`${sub.toUpperCase()} not found in the DB!`);
+        }
+    }
 
     useEffect(() => {
         const fetchAllSubjects = async () => {
@@ -42,10 +59,10 @@ const Cse = () => {
                         </div>
                         <div className='w-auto h-[4vh] flex justify-between items-center md:my-3 mb-3 font-normal text-xs md:text-base'>
                             <h1><span className='text-[#2563eb] underline'>School of Information and Communication Technology </span>&gt;<span className='text-[#2563eb] underline'> CSE</span></h1>
-                            {/* <div className='md:w-auto w-1/2 flex md:justify-end justify-between items-center'>
+                            <div onClick={searchQuery} className='md:w-auto w-1/2 flex md:justify-end justify-between items-center'>
                                 <SearchBar />
                                 <button className='border ml-1 border-black px-2 md:ml-2 rounded'>Search</button>
-                            </div> */}
+                            </div>
                         </div>
                         <div className='flex md:justify-between justify-center flex-wrap gap-5 md:mb-0 -mb-1 h-[31vh] md:w-auto'>
                             {subData.map((subject) => (
@@ -84,7 +101,7 @@ const Cse = () => {
                                                 {subject.year2022.endSem === ' ' ? '' : <a href={subject.year2022.endSem} target='_blank' className='text-[#2563eb]'>End</a>}
                                             </div>
                                         </div>}
-                                        {subject.year2025.midSem === ' ' && subject.year2025.endSem === ' '  && subject.year2024.midSem === ' ' && subject.year2024.endSem === ' ' && subject.year2023.midSem === ' ' && subject.year2023.endSem === ' '  && subject.year2022.midSem === ' ' && subject.year2022.endSem === ' ' ? <div className='flex justify-center items-center h-24'>No data available!</div> : ''}
+                                        {subject.year2025.midSem === ' ' && subject.year2025.endSem === ' ' && subject.year2024.midSem === ' ' && subject.year2024.endSem === ' ' && subject.year2023.midSem === ' ' && subject.year2023.endSem === ' ' && subject.year2022.midSem === ' ' && subject.year2022.endSem === ' ' ? <div className='flex justify-center items-center h-24'>No data available!</div> : ''}
                                     </div>
                                     <div className='h-10 mt-2 bg-[#d9d9d9] rounded flex justify-center items-center'>
                                         <button className='text-sm hover:font-semibold duration-300 transition-all hover:text-[#2563eb]'>Download Syllabus</button>
@@ -100,4 +117,4 @@ const Cse = () => {
     )
 }
 
-export default Cse
+export default Cse;
