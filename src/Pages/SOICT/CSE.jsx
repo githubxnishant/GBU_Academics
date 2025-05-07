@@ -13,10 +13,10 @@ const Cse = () => {
     const [query, setQuery] = useState([]);
 
     const searchQuery = async () => {
-        const sub = prompt("Search Subject Code");
+        const subCode = prompt("Search Subject Code");
         try {
             const response = await axios.get(`${server}/searchsubject/cse`, {
-                params: { sub }
+                params: { subCode }
             });
             if (response) {
                 setSubData([response.data.response]);
