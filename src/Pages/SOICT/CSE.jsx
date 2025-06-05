@@ -14,17 +14,17 @@ const Cse = () => {
     const [loading, setLoading] = useState(false);
 
     const searchQuery = async () => {
-        const subCode = prompt("Search Subject Code");
+        const sub = prompt("Search Subject Code");
         try {
             const response = await axios.get(`${server}/searchsubject/cse`, {
-                params: { subCode }
+                params: { sub }
             });
             if (response) {
                 setSubData([response.data.response]);
                 return;
             }
         } catch (error) {
-            console.log("Error searching the subject in the db!");
+            console.log("Error searching the subject in the db ! frontend");
             alert(`${sub.toUpperCase()} not found in the DB!`);
         }
     }
